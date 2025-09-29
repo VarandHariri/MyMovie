@@ -1,0 +1,59 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryDark">#1976D2</item>
+        <item name="colorAccent">#FF4081</item>
+    </style>
+
+    <style name="find_your_m">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="inception">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="a_thief_who">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="circleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="top_adventu">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="top_animati">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="top_comedy_">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="top_heros_m">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+    <style name="search_results_title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+</resources>

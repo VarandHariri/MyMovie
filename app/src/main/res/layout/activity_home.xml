@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/find_your_m"
+            android:layout_width="280dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="22dp"
+            android:gravity="top"
+            android:text="Find Your Movies"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp" />
+
+        <!-- Search Bar Container yang menyatu -->
+        <RelativeLayout
+            android:id="@+id/search_container"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="110dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/search_background"
+            android:paddingEnd="16dp">
+
+            <!-- Search Icon di dalam search bar -->
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/ic_search"
+                android:onClick="onSearchClick" />
+
+            <!-- EditText search -->
+            <EditText
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/search_icon"
+                android:background="@android:color/transparent"
+                android:hint="Search movies..."
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:textSize="14sp"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:maxLines="1" />
+
+        </RelativeLayout>
+
+        <!-- Adventure Section -->
+        <TextView
+            android:id="@+id/top_adventu"
+            android:layout_width="215dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="176dp"
+            android:gravity="top"
+            android:text="Top Adventure Movies"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/frame_2"
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="208dp" />
+
+        <!-- Animation Section -->
+        <TextView
+            android:id="@+id/top_animati"
+            android:layout_width="220dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="394dp"
+            android:gravity="top"
+            android:text="Top Animation Movies"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/frame_3"
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="426dp" />
+
+        <!-- Comedy Section -->
+        <TextView
+            android:id="@+id/top_comedy_"
+            android:layout_width="212dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="612dp"
+            android:gravity="top"
+            android:text="Top Comedy Movies"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/frame_4"
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="644dp" />
+
+        <!-- Heroes Section -->
+        <TextView
+            android:id="@+id/top_heros_m"
+            android:layout_width="181dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="835dp"
+            android:gravity="top"
+            android:text="Top Heroes Movies"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/frame_5"
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="867dp" />
+
+        <!-- User Icon -->
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="25dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_user"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            android:contentDescription="User icon" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:background="@drawable/movie_item_background"
+    android:padding="6dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/movie_poster"
+        android:layout_width="138dp"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/placeholder"
+        android:contentDescription="@string/movie_poster_description"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:id="@+id/movie_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="44dp"
+        android:padding="8dp"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:lineSpacingExtra="3sp" />
+
+    <!-- Tambahan untuk layout vertical -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/movie_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFD700"
+            android:textSize="12sp"
+            android:drawablePadding="4dp"
+            android:drawableLeft="@drawable/ic_star" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="12dp"
+            android:background="#666666"
+            android:layout_marginHorizontal="8dp" />
+
+        <TextView
+            android:id="@+id/movie_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#CCCCCC"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MovieDB</string>
+    <string name="find_your_m">Find Your Movies</string>
+    <string name="top_adventu">Top Adventure Movies</string>
+    <string name="top_animati">Top Animation Movies</string>
+    <string name="top_comedy_">Top Comedy Movies</string>
+    <string name="top_heros_m">Top Heroes Movies</string>
+    <string name="inception">INCEPTION</string>
+    <string name="movie_poster_description">Movie poster image</string>
+    <string name="a_thief_who">A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.</string>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#121212">
+
+    <!-- Header Container -->
+    <LinearLayout
+        android:id="@+id/header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="#1A1A1A">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back"
+            app:tint="#FFFFFF"
+            android:layout_gravity="center_vertical" />
+
+        <!-- Search Container -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center_vertical">
+
+            <!-- Search Bar Background -->
+            <View
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/search_background" />
+
+            <!-- Search EditText -->
+            <EditText
+                android:id="@+id/search_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:hint="Search movies..."
+                android:imeOptions="actionSearch"
+                android:maxLines="1"
+                android:paddingStart="12dp"
+                android:paddingEnd="40dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#999999"
+                android:textSize="14sp" />
+
+            <!-- Search Icon/Button -->
+            <ImageView
+                android:id="@+id/search_button"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_search"
+                app:tint="#FFFFFF" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- Search Results Title -->
+    <TextView
+        android:id="@+id/search_results_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_container"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp"
+        android:text="Search Results"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Search Results RecyclerView - GRID LAYOUT 2 KOLOM -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_results_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_results_title"
+        android:padding="8dp"
+        android:clipToPadding="false" />
+
+    <!-- Empty State -->
+    <TextView
+        android:id="@+id/empty_state_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="32dp"
+        android:text="No movies found\nTry different keywords"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
