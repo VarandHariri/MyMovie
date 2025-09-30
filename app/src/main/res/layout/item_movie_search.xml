@@ -12,8 +12,8 @@
 
     <ImageView
         android:id="@+id/movie_poster"
-        android:layout_width="148dp"
-        android:layout_height="140dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:scaleType="centerCrop"
         android:background="@drawable/placeholder"
         android:contentDescription="@string/movie_poster_description"
@@ -26,7 +26,7 @@
         android:minHeight="40dp"
         android:padding="4dp"
         android:textColor="#FFFFFF"
-        android:textSize="12sp"
+        android:textSize="15sp"
         android:maxLines="2"
         android:ellipsize="end"
         android:gravity="center"
@@ -46,7 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#FFD700"
-            android:textSize="10sp"
+            android:textSize="11sp"
             android:drawablePadding="2dp" />
 
         <View
@@ -60,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#CCCCCC"
-            android:textSize="10sp" />
+            android:textSize="11sp" />
 
     </LinearLayout>
 

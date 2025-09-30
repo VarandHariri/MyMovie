@@ -3,7 +3,6 @@ package com.example.mymovie;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
@@ -15,7 +14,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mymovie.adapter.SearchMovieAdapter;
 import com.example.mymovie.model.Movie;
 import com.example.mymovie.model.MovieResponse;
 import com.example.mymovie.network.ApiClient;

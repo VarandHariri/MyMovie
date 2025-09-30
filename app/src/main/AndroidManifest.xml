@@ -5,7 +5,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-    <!-- Permission untuk YouTube Player -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
